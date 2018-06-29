@@ -1,11 +1,13 @@
-package com.w3cjava.common.service;
+package com.w3cjava.common.base.service;
 
 import java.util.Collection;
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import com.w3cjava.common.persistence.CrudDao;
-import com.w3cjava.common.persistence.DataEntity;
+
+import com.w3cjava.common.base.dao.CrudDao;
+import com.w3cjava.common.base.pojo.DataEntity;
 /**
  * 
  * @projectNam：		W3cJava
@@ -57,19 +59,6 @@ public abstract class CrudService<D extends CrudDao<T>, T extends DataEntity<T>>
 		return dao.findList(entity);
 	}
 
-	/**
-	 * 查询分页数据
-	 * 
-	 * @param page
-	 *            分页对象
-	 * @param entity
-	 * @return
-	 */
-/*	public Page<T> findPage(Page<T> page, T entity) {
-		entity.setPage(page);
-		page.setList(dao.findList(entity));
-		return page;
-	}*/
 
 	/**
 	 * 保存数据（插入或更新）

@@ -1,15 +1,11 @@
 package com.w3cjava.pojo;
 
-public class User{
-	private String id;
+import com.w3cjava.common.base.pojo.DataEntity;
+
+public class User extends DataEntity<User>{
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private Integer age;
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
 	public String getName() {
 		return name;
 	}

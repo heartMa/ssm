@@ -10,14 +10,13 @@
         id, name, age
     </sql>
 
-    <select id="findById" parameterType="String" resultMap="BaseResultMap">
+    <select id="get" parameterType="String" resultMap="BaseResultMap">
         select 
-        
         <include refid="Base_Column_List"/>
         from user where id=#{id}
     </select>
 
-    <select id="getAllUsers" resultMap="BaseResultMap" parameterType="Map" >
+    <select id="findList" resultMap="BaseResultMap" parameterType="Map" >
         select
         <include refid="Base_Column_List" />
         from user

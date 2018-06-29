@@ -1,4 +1,4 @@
-package com.w3cjava.common.persistence;
+package com.w3cjava.common.base.pojo;
 
 import java.util.Date;
 /**

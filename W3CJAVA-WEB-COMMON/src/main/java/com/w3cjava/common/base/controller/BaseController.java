@@ -1,4 +1,4 @@
-package com.w3cjava.common.controller;
+package com.w3cjava.common.base.controller;
 
 import java.io.IOException;
 
